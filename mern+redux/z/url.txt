@@ -11,3 +11,14 @@ http://localhost:2005/api/user/me
 Post:this is for posting the new data
 http://localhost:2005/api/data
 
+Get:this is for get the user data
+http://localhost:2005/api/data
+
+
+Delete:delete the data
+http://localhost:2005/api/data/:id
+
+Put:edit the data
+http://localhost:2005/api/data/:id
+
+
