@@ -1,0 +1,13 @@
+post: this is for new user register
+http://localhost:2005/api/user/register
+
+
+post: this is for new user login
+http://localhost:2005/api/user/login
+
+Get: this is for get a user name
+http://localhost:2005/api/user/me
+
+Post:this is for posting the new data
+http://localhost:2005/api/data
+
