@@ -1,0 +1,19 @@
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #61dafb;
+  }
+  
+  
