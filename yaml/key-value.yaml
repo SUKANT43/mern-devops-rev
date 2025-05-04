@@ -1,0 +1,38 @@
+#ths is a key-value pair
+app: "user-authentication" 
+port: 8008
+version: 1.7
+
+#this is a object
+microservice:
+ app: "user-authentication"
+ port: 8008
+ version: 1.7
+
+#lists in yaml
+microservices:
+  - app: "user-authentication"
+    port: 8008
+    version: 1.7
+  - app: "user-authorization
+    port: 8009
+    version: 1.8
+#microservices = [
+#{"app": "user-authentication", "port": 8008, "version": 1.7},
+#{"app": "user-authorization", "port": 8009, "version": 1.3}
+#]
+
+#boolean in yaml
+microservice:
+ app: "user-authentication"
+ port: 8008
+ is_active: Yes   # equivalent to true
+is_approved: No  # equivalent to false
+
+#more abot yaml list
+microservices:
+  - app
+  - hello
+  - world
+
+microservice: [1,2,3,4,5]
