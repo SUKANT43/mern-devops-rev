@@ -26,14 +26,12 @@ const addData = async (req, res) => {
 const getData = async (req, res) => {
     try {
         const dataList = await Data.find({ user: req.user.userId });
-        return res.status(200).json({
-            message: 'Data fetched successfully',
-            data: dataList
-        });
+        return res.status(200).json(dataList); 
     } catch (error) {
         return res.status(400).json({ message: error.message });
     }
 };
+
 
 const updateData = async (req, res) => {
     const { title, description } = req.body;

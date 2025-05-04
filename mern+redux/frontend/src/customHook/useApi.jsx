@@ -7,7 +7,7 @@ function useApi() {
   const [loading, setLoading] = useState(false);
 
   const token = localStorage.getItem('token');
-
+  
   const trigger = async (url, method, data = null) => {
     setLoading(true);
     setError(null);
