@@ -21,3 +21,6 @@ EXPOSE 5000
 CMD ["npm","start"]
 
 #docker run -p 5000:5000  backend
+#docker network create mern-network -->create network for communicating backend and frontend
+# docker run --name backend --network mern-network -p 5000:5000 mern-backend
+# docker run --name mongo --network mern-network -p 2017:2017 mongo
