@@ -1,0 +1,28 @@
+//if a project is dockerized means it runs on all os
+//docker image is template of application snapshot 
+
+docker pull hello-world ---> this is a command given by the docker for testing images
+
+docker images --->for viewing downloded images
+
+docker run hello-world --->running docker image
+
+
+docker container
+docker ps(process status)-->for  viewing running docker containers
+docker ps -a -->for all docker container information
+
+FROM alpine:latest -->using taking linux environment latest for latest version
+CMD ["echo","hello, Docker!"] -->this is a command
+for running: docker build -t "image-name" . ---> -t is for assining name and . is telling that docker in same folder
+ docker run  understanding-image -->for running docker
+
+
+running node js
+same pull and same run 
+docker run -it node--->use run while need to use the node environment on a console (i-interactivity)
+docker stop (id or name)
+docker start or stop(id or container name insted of running a new image into a container)
+docker run --name node_image node for naming container name
+docker rename node_image my_node_image
+docker container prune --->deleteing not running container
