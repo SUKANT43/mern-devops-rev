@@ -1,3 +1,18 @@
+select * from todos;
+
+INSERT INTO todos (title) 
+VALUES 
+('Buy groceries'),
+('Complete Java assignment'),
+('Clean the house'),
+('Attend team meeting'),
+('Read a book'),
+('Call the doctor'),
+('Pay electricity bill'),
+('Finish React.js project'),
+('Go for a run'),
+('Organize files');
+
 
 DESCRIBE TABLE todos;
 CREATE TABLE IF NOT EXISTS todos (

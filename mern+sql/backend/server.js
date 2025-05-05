@@ -1,11 +1,14 @@
 const express=require('express')
 const app=express()
-const mysql = require('mysql2');
-const db=require('./config/db')
-
+const {pool}=require('./config/db')
+const route=require('./route/todoRoute')
 app.use(express.json())
 
+app.use('/api',route)
+
 app.listen(3005,()=>{
-  db()
+  if(pool){
+    console.log("db connected")
+  }
     console.log("running on server")
 })
