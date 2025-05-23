@@ -1,9 +1,10 @@
-import create from 'zustand';
-import {devtools, persist} from 'zustand/middleware';
-//persist is used to store the data in local storag
+import { create } from 'zustand';
+import { devtools, persist } from 'zustand/middleware';
+
+// ...rest of your code remains the same
 
 const courseStore = (set) => ({
-  courses: [], // initial state
+  courses: [],
 
   addCourse: (course) => {
     set((state) => ({
@@ -16,7 +17,23 @@ const courseStore = (set) => ({
       courses: state.courses.filter((c) => c.id !== id),
     }));
   },
+
+  toggleCourseStatus: (id) => {
+    set((state) => ({
+      courses: state.courses.map((c) =>
+        c.id === id ? { ...c, completed: !c.completed } : c
+      ),
+    }));
+  },
+  get
 });
 
+const useCourseStore = create(
+  devtools(
+    persist(courseStore, {
+      name: 'courses',
+    })
+  )
+);
 
-//state is used to store old value in the array
+export default useCourseStore;
