@@ -25,7 +25,7 @@ const courseStore = (set) => ({
       ),
     }));
   },
-  get
+  
 });
 
 const useCourseStore = create(
