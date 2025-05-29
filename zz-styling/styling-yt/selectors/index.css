@@ -1,0 +1,19 @@
+/* external styling is low priority compare to internal styles */
+
+h1{
+    color: blue;
+}
+
+.green{
+    color: green;
+    
+}
+
+div>p{ /* child  selector*/
+    color: red;
+}
+
+div a{
+    color: orange;
+}
+/* } descendent selector */

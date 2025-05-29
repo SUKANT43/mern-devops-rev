@@ -1,0 +1,34 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em; /* 1em is equivalent to the font size of the body  16px this is inherits */
+}
+/* } this is used to set the font for the entire document if no other font is specified it take another font */
+p{
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.5em;
+    justify-content:center;
+    text-shadow: 2px 4px 10px gainsboro;
+}
+
+p::first-line{
+    font-size: 2em; /* this is used to set the size of the first letter */
+    color: red; /* this is used to set the color of the first letter */
+    font-weight: bold; /* this is used to set the weight of the first letter */ 
+}
+
+a{
+    color: blue; /* this is used to set the color of the link */
+    text-decoration: none; /* this is used to remove the underline from the link */
+}
+
+h1{
+    text-align: center;
+}
+
+a:visited{
+    color: green; /* this is used to set the color of the visited link */
+}
+a:hover{
+    color: rosybrown;
+}

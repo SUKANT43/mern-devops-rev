@@ -1,0 +1,6 @@
+h3{
+    color: rgb(100,20,26); 
+    color:#64141A; /* this is the same color as rgb(100,20,26) but this is a hexadecimal */ 
+}
+
+/* the colors maximum value is 255, so rgb(255,0,0) is red */
