@@ -1,0 +1,19 @@
+.para1{
+    background-color: blanchedalmond;
+}
+
+.para2{
+    background-color: lightblue;
+}
+
+.para3{
+    background-color: lightgreen;
+}
+
+p{
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+}
