@@ -1,13 +1,19 @@
 .para1{
     background-color: blanchedalmond;
+    flex:1;
+    order:1;
 }
 
 .para2{
     background-color: lightblue;
+    flex:1;
+    order:2;
 }
 
 .para3{
     background-color: lightgreen;
+    flex:1;
+    order: 3;
 }
 
 p{
@@ -16,4 +22,10 @@ p{
 
 .container{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+
+/* justify conetent is for main axis and align-items cross axis (center , flex-top) */
