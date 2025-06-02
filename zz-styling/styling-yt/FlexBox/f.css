@@ -29,3 +29,4 @@ p{
 
 
 /* justify conetent is for main axis and align-items cross axis (center , flex-top) */
+/* flex-grow:1 which is used to. If the container need to take the space as per the screen is growing */
